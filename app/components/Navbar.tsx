@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
+import { GetStartedButton } from "./GetStartedButton"
 
 export default function Navbar() {
   return (
@@ -26,9 +27,7 @@ export default function Navbar() {
             <ChevronDown className="h-4 w-4 ml-1" />
           </div>
         </div>
-        <Link href="#" className="bg-white text-[#0649E7] px-6 py-2 rounded-full font-medium">
-          Get Started
-        </Link>
+        <GetStartedButton variant="white" />
       </div>
     </nav>
   )
