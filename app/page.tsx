@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar"
-import Testimonial from "./components/Testimonial"
-import WhyChooseUs from "./components/WhyChooseUs"
-import HowWeWork from "./components/HowWeWork"
-import Hero from "./components/Hero"
+import WhyChooseUs from "./components/Home/WhyChooseUs"
+import HowWeWork from "./components/Home/HowWeWork"
+import Hero from "./components/Home/Hero"
+import Testimonial from "./components/Home/Testimonial"
+import Contact from "./components/Home/Contact"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HowWeWork />
       <Testimonial />
       <WhyChooseUs />
+      <Contact />
     </main>
   )
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const WhyChooseUs = () => {
   return (
     < section className="py-16 md:py-24 w-[75%] mx-auto" >
@@ -83,4 +81,4 @@ const WhyChooseUs = () => {
   )
 }
 
-export default WhyChooseUs
+export default WhyChooseUs;

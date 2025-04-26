@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 pt-12 pb-6">
+    <footer className="border-t border-gray-200 pt-12 text-[#0649E7]">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -74,16 +74,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-600">© 2023 Mobiusservices LLC</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/terms" className="text-sm text-gray-600 hover:text-blue-600">
-              Terms & Conditions
-            </Link>
-            <Link href="/privacy" className="text-sm text-gray-600 hover:text-blue-600">
-              Privacy Policy
-            </Link>
-          </div>
+      </div>
+      <div className="bg-[#0649E7] p-4 mt-4 text-white flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm">© 2023 Mobiusservices LLC</p>
+        <div className="flex space-x-6 mt-4 md:mt-0">
+          <Link href="/terms" className="text-sm">
+            Terms & Conditions
+          </Link>
+          <Link href="/privacy" className="text-smF">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

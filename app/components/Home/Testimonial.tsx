@@ -1,6 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-import Button from './Button'
-
+import Button from '../Button'
 
 const Testimonial = () => {
   return (
@@ -63,4 +62,4 @@ const Testimonial = () => {
   )
 }
 
-export default Testimonial
+export default Testimonial;
