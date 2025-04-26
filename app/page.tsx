@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
 import Testimonial from "./components/Testimonial"
 import WhyChooseUs from "./components/WhyChooseUs"
 import HowWeWork from "./components/HowWeWork"
