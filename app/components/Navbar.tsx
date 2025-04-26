@@ -1,46 +1,32 @@
 import Link from "next/link"
 import Image from "next/image"
+import { ChevronDown } from "lucide-react"
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center py-4 px-6 md:px-12">
-      <div className="flex items-center text-xl">
-        <Link href="/" className="flex items-center">
-          <div className="w-40 text-[#FEFEFE] font-mono flex items-center">
-            {/* <Image src="/logo.png" alt="MobiusEngine" width={150} height={40} className="object-contain" /> */}
-            <span>MobiusEngine</span>
-          </div>
-        </Link>
-      </div>
-
-      <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="nav-link">
-          Home
-        </Link>
-        <Link href="/about" className="nav-link">
-          About Us
-        </Link>
-        <Link href="/plans" className="nav-link">
-          Plans
-        </Link>
-        <Link href="/testimonials" className="nav-link">
-          Testimonials
-        </Link>
-        <Link href="/privacy" className="nav-link">
-          Privacy Policy
-        </Link>
-        <div className="relative group">
-          <button className="nav-link flex items-center">
-            More <span className="ml-1">▼</span>
-          </button>
+    <nav className="flex justify-between items-center py-4 px-12">
+      <div className="flex items-center">
+        <div className="mr-2">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5ZM20 30C14.477 30 10 25.523 10 20C10 14.477 14.477 10 20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30Z" fill="white" />
+          </svg>
         </div>
+        <h1 className="text-white text-xl font-medium">MobiusEngine</h1>
       </div>
 
-      <div>
-        <Link
-          href="/get-started"
-          className="bg-white text-blue-600 hover:bg-[#022183] hover:text-[#FEFEFE] font-semibold py-2 px-6 rounded-full"
-        >
+      <div className="flex items-center space-x-8 w-[80%] justify-between">
+        <div className="flex items-center justify-evenly w-3/4">
+          <Link href="#" className="text-white">Home</Link>
+          <Link href="#" className="text-white">About Us</Link>
+          <Link href="#" className="text-white">Plans</Link>
+          <Link href="#" className="text-white">Testimonials</Link>
+          <Link href="#" className="text-white">Privacy Policy</Link>
+          <div className="flex items-center text-white">
+            <span>More</span>
+            <ChevronDown className="h-4 w-4 ml-1" />
+          </div>
+        </div>
+        <Link href="#" className="bg-white text-[#0649E7] px-6 py-2 rounded-full font-medium">
           Get Started
         </Link>
       </div>
