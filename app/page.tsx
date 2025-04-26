@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./components/Button";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -10,7 +11,7 @@ export default function Home() {
         <Navbar />
 
         <div className="container mx-auto px-6 py-16 md:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center border border-red-900">
             <div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
                 Land job interviews <span className="text-[#022183]">10x</span> faster
@@ -23,26 +24,8 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="relative">
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-blue-600 font-bold text-xl mb-2">2024 / 2025</h3>
-                <h2 className="text-blue-600 font-bold text-2xl mb-4">HIRING TRENDS</h2>
-                <p className="text-gray-700 text-sm mb-6">
-                  A job-seeker's guide to what's in demand, what's fading, and how to position yourself for growing tech
-                  layoffs
-                </p>
-                <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                    <span className="text-gray-500">Logo</span>
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="w-12 h-12 bg-gray-200 flex items-center justify-center">
-                    <span className="text-gray-500">Book</span>
-                  </div>
-                </div>
-                <p className="text-center text-blue-600 mt-4">Download Free E-Book</p>
-              </div>
+            <div className="relative border border-red-900 flex-end">
+              <Image src='/hero.png' height={200} width={300} alt="hero-image" />
             </div>
           </div>
         </div>

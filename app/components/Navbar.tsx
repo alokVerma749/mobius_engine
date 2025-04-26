@@ -4,10 +4,11 @@ import Image from "next/image"
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center py-4 px-6 md:px-12">
-      <div className="flex items-center">
+      <div className="flex items-center text-xl">
         <Link href="/" className="flex items-center">
-          <div className="w-40 text-white font-bold flex items-center">
-            <Image src="/logo.png" alt="MobiusEngine" width={150} height={40} className="object-contain" />
+          <div className="w-40 text-[#FEFEFE] font-mono flex items-center">
+            {/* <Image src="/logo.png" alt="MobiusEngine" width={150} height={40} className="object-contain" /> */}
+            <span>MobiusEngine</span>
           </div>
         </Link>
       </div>
@@ -38,7 +39,7 @@ export default function Navbar() {
       <div>
         <Link
           href="/get-started"
-          className="bg-white text-blue-600 hover:bg-blue-50 font-semibold py-2 px-6 rounded-full"
+          className="bg-white text-blue-600 hover:bg-[#022183] hover:text-[#FEFEFE] font-semibold py-2 px-6 rounded-full"
         >
           Get Started
         </Link>
