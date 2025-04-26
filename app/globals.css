@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0649E7] hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors;
+  }
+
+  .btn-outline {
+    @apply border bg-[#0649E7] text-blue-600 hover:bg-blue-50 font-semibold py-2 px-6 rounded-full transition-colors;
+  }
+
+  .nav-link {
+    @apply text-white hover:text-blue-100 transition-colors;
+  }
+
+  .gradient-blue {
+    @apply bg-gradient-to-b from-blue-500 to-[#0649E7];
+  }
+
+  .gradient-dark-blue {
+    @apply bg-gradient-to-b from-blue-900 to-[#0649E7];
+  }
 }
