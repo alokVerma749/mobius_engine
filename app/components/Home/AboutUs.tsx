@@ -21,7 +21,7 @@ export function AboutUs() {
                 />
               </div>
               <div className="absolute bottom-0 right-0 p-2 rounded-full bg-white/70  dark:bg-zinc-400/40 backdrop-blur-md shadow-2xl border border-white/20 dark:border-white/10">
-                <Linkedin className="h-6 w-6 text-[#0649E7]" />
+                <Linkedin color='white' className="h-6 w-6 text-[#0649E7]" />
               </div>
             </div>
 
@@ -53,7 +53,7 @@ export function AboutUs() {
                 />
               </div>
               <div className="absolute bottom-0 right-0 p-2 rounded-full bg-white/70  dark:bg-zinc-400/40 backdrop-blur-md shadow-2xl border border-white/20 dark:border-white/10">
-                <Linkedin className="h-6 w-6 text-[#0649E7]" />
+                <Linkedin color='white' className="h-6 w-6 text-[#0649E7]" />
               </div>
             </div>
 
