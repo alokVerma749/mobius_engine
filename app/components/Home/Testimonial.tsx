@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import Button from '../Button'
+import { GetStartedButton } from '../GetStartedButton';
 
 const Testimonial = () => {
   return (
@@ -49,13 +50,11 @@ const Testimonial = () => {
           ))}
         </div>
 
-        <div className="flex justify-center mt-12 space-x-6">
+        <div className="flex justify-center flex-col md:flex-row space-y-4 mt-12 space-x-6">
           <Button href="/testimonials" variant="outline" arrow className="hover:bg-[#022183] hover:text-white bg-white font-medium">
             More customer testimonials
           </Button>
-          <Button href="/get-started" arrow>
-            Get Started
-          </Button>
+          <GetStartedButton />
         </div>
       </div>
     </section >

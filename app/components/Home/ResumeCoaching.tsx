@@ -12,9 +12,9 @@ export function ResumeCoaching() {
         </div>
       </div>
 
-      <div className="flex justify-evenly flex-wrap">
+      <div className="flex justify-evenly flex-wrap flex-col md:flex-row space-y-4">
         {/* Resume Rebuild */}
-        <div className="border-2 border-[#0649E7] rounded-lg p-6 w-[40%]  flex flex-col">
+        <div className="border-2 border-[#0649E7] rounded-lg p-6 w-full md:w-[40%]  flex flex-col">
           <h3 className="text-xl font-bold text-[#0649E7] mb-2">Resume Rebuild</h3>
           <p className="text-sm mb-4">Crafted for senior to VP-level professionals ready for their next big step.</p>
 
@@ -68,7 +68,7 @@ export function ResumeCoaching() {
         </div>
 
         {/* Interview Prep */}
-        <div className="border-2 border-[#0649E7] rounded-lg p-6 w-[40%] flex flex-col">
+        <div className="border-2 border-[#0649E7] rounded-lg p-6 w-full md:w-[40%] flex flex-col">
           <h3 className="text-xl font-bold text-[#0649E7] mb-2">Interview Prep</h3>
           <p className="text-sm mb-4">Two sessions to sharpen your story, confidence, and clarity — fast.</p>
 

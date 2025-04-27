@@ -4,8 +4,8 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="flex px-12 pt-20">
-      <div className="w-1/2">
+    <div className="flex flex-col gap-6 md:flex-row px-12 pt-20">
+      <div className="w-full md:w-1/2">
         <h1 className="text-white text-6xl font-bold leading-tight">
           Land job interviews <br />
           <span className="text-[#1e90ff]">10x</span> faster
@@ -22,7 +22,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="w-1/2 flex justify-center">
+      <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
         <div className="relative bg-white p-4 rounded-lg max-w-md">
           <div className="text-center">
             <Image alt='hero image' height={300} width={300} src='/hero.png' />

@@ -7,7 +7,7 @@ export function AboutUs() {
       <div className="container px-4 w-[75%] mx-auto">
         <h2 className="text-3xl font-bold mb-12">About Us</h2>
 
-        <div className="space-y-16 w-[75%] mx-auto">
+        <div className="space-y-16 w-full md:w-[75%] mx-auto">
           {/* First Team Member */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="relative">
