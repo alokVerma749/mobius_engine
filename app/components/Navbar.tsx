@@ -2,9 +2,13 @@ import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import { GetStartedButton } from "./GetStartedButton"
 
-export default function Navbar() {
+interface NavbarProps {
+  style?: string;
+}
+
+export default function Navbar({ style = "transparent" }: NavbarProps) {
   return (
-    <nav className="flex justify-between items-center py-4 px-12">
+    <nav className={`flex justify-between flex-col md:flex-row items-center py-4 px-12 ${style}`}>
       <div className="flex items-center">
         <div className="mr-2">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +18,7 @@ export default function Navbar() {
         <h1 className="text-white text-xl font-medium">MobiusEngine</h1>
       </div>
 
-      <div className="flex items-center space-x-8 w-[80%] justify-between">
+      <div className="items-center space-x-8 w-[80%] justify-between hidden md:flex">
         <div className="flex items-center justify-evenly w-3/4">
           <Link href="#" className="text-white">Home</Link>
           <Link href="#" className="text-white">About Us</Link>
